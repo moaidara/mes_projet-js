@@ -20,6 +20,13 @@
 
     <body>
         <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <img src="../img/bienvenue.gif" alt="bienvenue" class="w-100" style="height: 100px;">
+                    </div>
+                </div>
+            </div>
             <!-- place navbar here -->
         </header>
         <main class="d-flex justify-content-center align-items-center" style="height: 100%;">
@@ -30,7 +37,19 @@
                            <h3>un nombre a ete choisie aleatoirement deviner de quelle nombre il s'agit <br> Attention! vous avez cinq essait bonne chance</h3> 
                     </div>
                     <div class="container d-flex justify-content-center py-5">
-                        <label for="nombre"  class="px-5">Entrer un nombre</label><input class="px-5" id="nombre" type="number"><button class="btn bg-danger" id="valider">Valider</button>
+                        <label for="nombre"  class="mx-2">Entrer un nombre</label><input class="mx-2" id="nombre" type="number">
+                        <button class="mx-1 btn bg-danger" id="valider">Valider</button>
+                        
+                    </div>
+                    <div class="container d-flex justify-content-center">
+                        <button class="btn bg-danger " id="reessayer">reessayer</button>
+                    </div>
+                </div>
+                <div id="dialog-box" class="container-fluid d-none  position-fixed top-50 start-50 translate-middle py-5 bg-danger" style="height: 40%; width: 30%;">
+                    <div class="container d-flex flex-column justify-content-center align-items-center">
+                        <p id="indication"></p>
+                        <p id="Attention"></p>
+                        <button class="btn bg-light" id="ok" onclick="ok()">ok</button>
                     </div>
                 </div>
             </section>
